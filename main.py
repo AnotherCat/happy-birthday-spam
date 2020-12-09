@@ -18,7 +18,8 @@ def send_happy(i: int, time_to_wait: float) -> float:
     else:
         return time_to_wait * 0.9
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     while True:
         for multiplier in send_emojis:
             wait_time = send_happy(randint(0, 12), wait_time)
