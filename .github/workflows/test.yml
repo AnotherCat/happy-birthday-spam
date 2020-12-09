@@ -1,6 +1,6 @@
-# .github/workflows/lint.yml
+# .github/workflows/test.yml
 
-name: Lint
+name: Test
 
 on: [push, pull_request]
 
@@ -24,3 +24,4 @@ jobs:
       - run: pipenv run black --check .
       - run: pipenv run flake8
       - run: pipenv run mypy
+      - run: pipenv run pytest --cov --cov-fail-under=100
