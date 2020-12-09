@@ -2,8 +2,8 @@
 from random import randint
 from time import sleep
 
-wait_time= 2
-send_emojis= ["🥳", "😀", "🎺", "🎉", "🎊"]
+wait_time = 2
+send_emojis = ["🥳", "😀", "🎺", "🎉", "🎊"]
 
 
 def send_happy(i, time_to_wait):
