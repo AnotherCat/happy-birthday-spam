@@ -1,12 +1,13 @@
 # main.py
 from random import randint
 from time import sleep
+from typing import Union
 
-wait_time = 2
+wait_time: Union[int, float] = 2
 send_emojis = ["🥳", "😀", "🎺", "🎉", "🎊"]
 
 
-def send_happy(i, time_to_wait):
+def send_happy(i: int, time_to_wait: float) -> float:
     emoji_string = ""
     for a in range(0, i):
         emoji_string = emoji_string + f" {send_emojis[randint(0,len(send_emojis)- 1)]} "
